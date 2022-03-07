@@ -8,15 +8,23 @@
 
 :root {
     /* Fonts */
+    --ff-primary:'IBM Plex Sans', sans-serif;   /* Paragraphs */
+    --ff-secondary:'JetBrains Mono', monospace; /* Titles */
 
     /* Colours */
     --clr-light: #fff;
     --clr-dark: #000;
+    --clr-accent: #17BEBB;
 
+    /* Font Sizes */
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    /* Font Weights */
+    --fw-reg: 400;
+    --fw-bold: 700;
 }
 
 /* Resize fonts on smaller screens */
@@ -35,9 +43,13 @@ body {
     background: var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
-    /* font-family: ; */
+    font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
 }
 
 img {
@@ -45,12 +57,14 @@ img {
     max-width: 100%;
 }
 
+strong { font-weight: var(--fw-bold); }
+
 /* Typography */
 
 h1,
 h2,
 h3 {
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
 }
 
@@ -59,9 +73,32 @@ h2 { font-size: var(--fs-h2); }
 h3 { font-size: var(--fs-h3); }
 
 .section__titile {
+    margin-bottom: .25em;
+}
 
+.section__title--intro {
+    font-weight: var(--fw-reg);
 }
 
 .section__subtitle {
     margin: 0;
+    font-size: var(--fs-h3);
 }
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+/* Header */
+
+nav { display: none; }
+
+/* Intro Section */
+
+.intro {
+    position: relative;
+}
+
