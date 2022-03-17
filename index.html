@@ -1,141 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mike, the Developer</title>
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/748400ecc2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/748400ecc2.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Font Styles -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <!-- <div class="logo">
-            <span class="fa-solid fa-code"></span>
-        </div> -->
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-            </ul>
-        </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Intro -->
     <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">Hi, I'm <strong>Mike</strong></h1>
-        <p class="section__subtitle section__subtitle--intro">full-stack developer</p>
-        <img src="./assets/images/Davis.jpg" alt="A picture of Mike smiling" class="intro__img">
+      <h1 class="section__title section__title--intro">
+        Hi, I'm <strong>Mike</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        full-stack developer
+      </p>
+      <img
+        src="./assets/images/Davis300x300.jpg"
+        alt="A picture of Mike smiling"
+        class="intro__img"
+      />
     </section>
 
     <!-- My services -->
     <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">What I do</h2>
-        <div class="service-container">
-            <div class="service">
-                <h3>Design</h3>
-                <p>It is never just a website. It is a signal that will tell the world what you need to say. I make
-                    websites that speak loud and clear. Smashing together logic and eye-catching designs might as well
-                    be a morning routine.</p>
-            </div>
-
-            <div class="service">
-                <h3>Development</h3>
-                <p>Building websites, writing clean and efficient code, and loving every moment. I take a stand for
-                    quality. Developing from scratch, or updating to meet mordern web standards. A passion for problem
-                    solving, and a knack for over-delivering.</p>
-            </div>
-
-            <div class="service">
-                <h3>Communication</h3>
-                <p>The best experience comes with knowing ideas are being understood. The best experiances
-                    are simple. I firmly believe that great communication brings a simpleness to ideas that bring
-                    forward the best products.</p>
-            </div>
-
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="service-container">
+        <div class="service">
+          <h3>Design</h3>
+          <p>
+            It is never just a website. It is a signal that will tell the world
+            what you need to say. I make websites that speak loud and clear.
+            Smashing together logic and eye-catching designs like it's a morning
+            routine.
+          </p>
         </div>
 
-        <a href="#work" class="btn">My Work</a>
+        <div class="service">
+          <h3>Development</h3>
+          <p>
+            Clean and efficient code, and loving every moment. Take a stand for
+            quality. Developing from scratch, or updating to meet mordern web
+            standards. A passion for problem solving, and a knack for
+            over-delivering.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Communication</h3>
+          <p>
+            The best experience comes with knowing ideas are being understood.
+            The best experiances are simple. Great communication brings a
+            simpleness to ideas that bring forward the best products.
+          </p>
+        </div>
+      </div>
+
+      <a href="#work" class="btn">My Work</a>
     </section>
 
     <!-- About Me -->
     <section class="about-me" id="about">
-        <header>
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about">I'm a dude with a keyboard</p>
-        </header>
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        I'm a dude with a keyboard
+      </p>
 
-        <div class="about-me__body">
-            <p>I'm a software developer based in Ontario, Canada, Earth. I focus on full-stack development to bring
-                amazing
-                website to life. If you are a business seeking a web presence or an employer looking to hire, I would be
-                excited to hear
-                from you.</p>
-            <p>I would love to have a virtual coffee <strong>with you!</strong> No matter if you are seeking advice,
-                ideas, business, or want to network. I want to chat and learn.</p>
-        </div>
+      <div class="about-me__body">
+        <p>
+          I'm a software developer based in Ontario, Canada, Earth. I focus on
+          full-stack development to bring amazing website to life. If you are a
+          business seeking a web presence or an employer looking to hire, I
+          would be excited to hear from you.
+        </p>
+        <p>
+          I would love to have a virtual coffee <strong>with you!</strong> No
+          matter if you are seeking advice, searching for ideas, want to do
+          business, or looking to network. I want to chat and learn.
+        </p>
+      </div>
 
-        <img src="./assets/images/ben-kolde-bs2Ba7t69mM-unsplash.jpg"
-            alt="I design and develop experiences that make people's lives simple." class="about-me__img">
+      <img
+        src="./assets/images/ben-kolde-bs2Ba7t69mM-unsplash.jpg"
+        alt="I design and develop experiences that make people's lives simple."
+        class="about-me__img"
+      />
     </section>
 
     <!-- My work -->
     <section class="my-work" id="work">
-        <h2 class="section__title section__title--work">My Work</h2>
-        <p class="section__subtitle section__subtitle--work">Projects and Designs</p>
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        Projects and Designs
+      </p>
 
-        <div class="portfolio">
-            <!-- portfolio item 01 -->
-            <a href="./portfolio-item.html" class="portfolio__item">
-                <img src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" alt="" class="portfolio__img">
-            </a>
+      <div class="portfolio">
+        <!-- portfolio item 01 -->
+        <a href="#" class="portfolio__item">
+          <img
+            src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
 
-            <!-- portfolio item 02 -->
-            <a href="./portfolio-item.html" class="portfolio__item">
-                <img src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" alt="" class="portfolio__img">
-            </a>
+        <!-- portfolio item 02 -->
+        <a href="#" class="portfolio__item">
+          <img
+            src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
 
-            <!-- portfolio item 03 -->
-            <a href="./portfolio-item.html" class="portfolio__item">
-                <img src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" alt="" class="portfolio__img">
-            </a>
-        </div>
+        <!-- portfolio item 03 -->
+        <a href="#" class="portfolio__item">
+          <img
+            src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
+      </div>
     </section>
 
-    <footer class="footer">
-        <a href="mailto:davis.micheal.scott@gmail.com" class="footer__link">davis.micheal.scott@gmail.com</a>
-        <ul class="social-list">
-            <li class="social-list__item"><a href="https://www.linkedin.com/in/mike-s-davis/"
-                    class="social-list__link"><span class="fa-brands fa-linkedin"></span></a></li>
-            <li class="social-list__item"><a href="https://twitter.com/DadBunDavis" class="social-list__link"><span
-                        class="fa-brands fa-twitter"></span></a></li>
-            <!-- <li class="social-list__item"><a href="#" class="social-list__link"></a></li> -->
-            <!-- <li class="social-list__item"><a href="#" class="social-list__link"></a></li> -->
-        </ul>
+    <footer class="footer" id="footer">
+      <a href="mailto:davis.micheal.scott@gmail.com" class="footer__link"
+        >davis.micheal.scott@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/mike-s-davis/"
+            class="social-list__link"
+            ><span class="fa-brands fa-linkedin"></span
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://twitter.com/DadBunDavis" class="social-list__link"
+            ><span class="fa-brands fa-twitter"></span
+          ></a>
+        </li>
+        <!-- <li class="social-list__item"><a href="https://www.codewars.com/users/M-S-Davis/badges/micro" class="social-list__link"></a></li> -->
+        <!-- <li class="social-list__item"><a href="#" class="social-list__link"></a></li> -->
+      </ul>
     </footer>
 
     <script src="./assets/js/index.js"></script>
-
-</body>
-
+  </body>
 </html>
