@@ -10,8 +10,10 @@
 
 :root {
   /* Fonts */
-  --ff-primary: "IBM Plex Sans", sans-serif; /* Paragraphs */
-  --ff-secondary: "JetBrains Mono", monospace; /* Titles */
+  --ff-primary: "IBM Plex Sans", sans-serif;
+  /* Paragraphs */
+  --ff-secondary: "JetBrains Mono", monospace;
+  /* Titles */
 
   /* Colours */
   --clr-light: #dbdbdb;
@@ -47,12 +49,14 @@
     --fs-body: 1.125rem;
   }
 }
+
 /* ------------------------- */
 /* General Styles */
 /* ------------------------- */
 
 html {
-  scroll-behavior: smooth; /* You are welcome */
+  scroll-behavior: smooth;
+  /* You are welcome */
 }
 
 body {
@@ -76,6 +80,7 @@ img {
 strong {
   font-weight: var(--fw-bold);
 }
+
 :focus {
   outline: 3px solid var(--clr-accent);
   outline-offset: 3px;
@@ -117,15 +122,18 @@ h3 {
 h1 {
   font-size: var(--fs-h1);
 }
+
 h2 {
   font-size: var(--fs-h2);
 }
+
 h3 {
   font-size: var(--fs-h3);
 }
 
 .section__titile {
   margin-bottom: 0.25em;
+  max-width: 600px;
 }
 
 .section__title--intro {
@@ -265,6 +273,7 @@ h3 {
 .hamburger::before {
   top: 6px;
 }
+
 .hamburger::after {
   bottom: 6px;
 }
@@ -314,7 +323,8 @@ h3 {
 
     position: relative;
     left: -1.5em;
-    width: calc(100% + 1.5em); /* Adding width equal to the offset above. */
+    width: calc(100% + 1.5em);
+    /* Adding width equal to the offset above. */
   }
 }
 
@@ -359,11 +369,12 @@ h3 {
   .service-container {
     display: flex;
     max-width: 1000px;
-    margin-left: auto; /* specifies left & right to not conflict with margin-bottom in service-container */
+    margin-left: auto;
+    /* specifies left & right to not conflict with margin-bottom in service-container */
     margin-right: auto;
   }
 
-  .service + .service {
+  .service+.service {
     margin-left: 2em;
   }
 }
@@ -439,8 +450,9 @@ h3 {
 
 .portfolio__img {
   min-width: 100%;
-  opacity: 0.9;
+  opacity: 0.85;
   background-size: cover;
+  background-repeat: no-repeat;
   transition: transform 4750ms cubic-bezier(0.5, 0, 0.5, 1),
     opacity 150ms linear;
 }
@@ -500,4 +512,18 @@ h3 {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
